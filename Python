@@ -1,8 +1,10 @@
+#Variables
 name = ""
 has_sword = False
 has_shield = False
 has_sword_and_shield = False
 
+#Start of your journey
 print("You are a valiant knight sent to a dungeon.")
 print("You are tasked with finding the princess who was kidnapped.")
 name = input("What is your name?")
@@ -26,10 +28,26 @@ elif int(item) == 3:
   print("Both a way to attack and defend, the best choice")
   has_sword_and_shield = True
 else:
-  print("Hmm, that's not a choice. I guess you don't get an item.")
+  print("You foolishly decide to not bring anything with you, a choice that quickly leads to your death. (Ending 1/12)")
 
 
 print("Looking around, it is dimly lit, with torches hanging against the wall.")
-print("You hear sudden sounds, almost like footsteps coming from a nearby corridor")
-print("What do you do?")
+print("You hear sudden sounds, almost like footsteps coming from a nearby corridor, what do you do?")
+print("1) ""You follow the sound of footsteps, coming across a massive door standing in your way.")
+print("2) ""You decide against following them and continue forward, ending up meeting a swarm of monsters.")
+choice = input("What do you do?")
 
+if not choice.isdigit():
+  print("You are impaled by a spike trap in the wall. You died. (Ending 2/12)")
+
+elif int(choice) == 1:
+  print("You push open the door and come face to face with the lord who rules over this dungeon.")
+
+elif int(choice) == 2:
+  print("As you come upon the swarm of monsters, they close in on you as you ready yourself to fight.")
+  if has_shield:
+    print("You are able to defend yourself for a while, but with no weapon to fight with, you are eventually overwhelmed and slained by the monsters. (Ending 3/12)")
+  if has_sword:
+    print("You are able to mow down the swarm of monsters, but not without sustaining injuries, some which are severe.")
+  if has_sword_and_shield:
+    print("You are able to clear the swarm of monsters with little problem and push on further along the long and dark corridor")
