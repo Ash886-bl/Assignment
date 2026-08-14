@@ -1,0 +1,35 @@
+name = ""
+has_sword = False
+has_shield = False
+has_sword_and_shield = False
+
+print("You are a valiant knight sent to a dungeon.")
+print("You are tasked with finding the princess who was kidnapped.")
+name = input("What is your name?")
+print("Knight "+name+". You enter the dungeon.")
+
+
+print("You brought gear along with you, what did you bring?")
+print("A sword")
+print("A shield")
+print("Both a sword and shield")
+item = input("What item did you find in your backpack? (enter a number) : ")
+if not item.isdigit():
+  print("Hmm, that's not a choice. I guess you don't get an item.")
+elif int(item) == 1:
+  print("A sharpened sword, good choice, but you have nothing to protect you with.")
+  has_sword = True
+elif int(item) == 2:
+  print("A shield, but how are you to attack?")
+  has_shield = True
+elif int(item) == 3:
+  print("Both a way to attack and defend, the best choice")
+  has_sword_and_shield = True
+else:
+  print("Hmm, that's not a choice. I guess you don't get an item.")
+
+
+print("Looking around, it is dimly lit, with torches hanging against the wall.")
+print("You hear sudden sounds, almost like footsteps coming from a nearby corridor")
+print("What do you do?")
+
