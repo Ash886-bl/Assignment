@@ -53,3 +53,22 @@ elif int(choice) == 2:
     print("You are able to mow down the swarm of monsters, but not without sustaining injuries, some which are severe. You leave the dungeon, failing in your mission (Ending 5/12)")
   if has_sword_and_shield:
     print("You are able to clear the swarm of monsters with little problem and push on further along the long and dark corridor")
+
+print("You push on, hearing the panicked cries from the princess, eventually bringing you to another fork in the dungeon, this time with 3 different doors.")
+print("The first door is a plain ordinary door.")
+print("The second one is grotesquely ornate, with a large golden outline and jeweled doorhandle.")
+print("The third and final door is a clean slate of marble, which you can hear the princess' cries coming from the other side.")
+print("Which door do you choose to go through?")
+choice = input("Where do you go?")
+
+if not choice.isdigit():
+  print("You decide against going to any of them and turn around to go somewhere else, leading to your permanent disappearnce through unknown means. (Ending 6/12)")
+
+elif int(choice) == 1:
+  print("You push open the first door, which is where the princess was actually residing, which makes you realize those cries were a trap that a demon had placed in order to lure you to your death.")
+
+elif int(choice) == 2:
+  print("You head to the ornate door, but to your shock and disgust, it opens up into a mouth and bites you in two, before taking its long prehensile tongue and swallowing both parts of you. (Ending 7/12)")
+
+elif int(choice) == 3:
+ print("You push open the marble door, expecting to see the princess on the other side, but you instead see a demon that impales you with his trident, letting you bleed out. (Ending 8/12)")
