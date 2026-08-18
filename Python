@@ -72,3 +72,5 @@ elif int(choice) == 2:
 
 elif int(choice) == 3:
  print("You push open the marble door, expecting to see the princess on the other side, but you instead see a demon that impales you with his trident, letting you bleed out. (Ending 8/12)")
+
+print("You quickly take the princess out of the room, defending her when any monsters come up, but suddenly a influx of magic permeates the hallway, and a large, 4-legged monster appears from the shadows")
