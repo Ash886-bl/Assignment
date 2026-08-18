@@ -41,13 +41,15 @@ if not choice.isdigit():
   print("You are impaled by a spike trap in the wall. You died. (Ending 2/12)")
 
 elif int(choice) == 1:
-  print("You push open the door and come face to face with the lord who rules over this dungeon.")
-
+  print("You push open the door and come face to face with a seemingly empty throne in the middle of the room.")
+  print("You look around but the princess is nowhere in sight, so you turn to leave before feeling a chilling presence. The monster that rules over this dungeon has entered the same room, blocking the exit for you.")
+  print("No matter the decision you could have made, the monster was too strong for you, swallowing you whole. (Ending 3/12)")
+  
 elif int(choice) == 2:
   print("As you come upon the swarm of monsters, they close in on you as you ready yourself to fight.")
   if has_shield:
-    print("You are able to defend yourself for a while, but with no weapon to fight with, you are eventually overwhelmed and slained by the monsters. (Ending 3/12)")
+    print("You are able to defend yourself for a while, but with no weapon to fight with, you are eventually overwhelmed and slained by the monsters. (Ending 4/12)")
   if has_sword:
-    print("You are able to mow down the swarm of monsters, but not without sustaining injuries, some which are severe.")
+    print("You are able to mow down the swarm of monsters, but not without sustaining injuries, some which are severe. You leave the dungeon, failing in your mission (Ending 5/12)")
   if has_sword_and_shield:
     print("You are able to clear the swarm of monsters with little problem and push on further along the long and dark corridor")
