@@ -74,3 +74,22 @@ elif int(choice) == 3:
  print("You push open the marble door, expecting to see the princess on the other side, but you instead see a demon that impales you with his trident, letting you bleed out. (Ending 8/12)")
 
 print("You quickly take the princess out of the room, defending her when any monsters come up, but suddenly a influx of magic permeates the hallway, and a large, 4-legged monster appears from the shadows")
+print("Do you flee or guard the princess?")
+print("1) You take the princess and run as far as you can towards the exit.")
+print("2) You ready yourself to fight the monster, even as you know you likely won't win.")
+choice = input("What do you do?")
+
+if not choice.isdigit():
+  print("You freeze in place due to horror and let the monster thrash both you and the princess, leaving you two lifeless. (Ending 9/12)")
+
+elif int(choice) == 1:
+  print("You flee with the princess, successfully bringing her out of the dungeon and back to the castle. (Ending 10/12)")
+
+elif int(choice) == 2:
+  print("You ready your weapon, ready to defend the princess with your life.")
+  if has_shield:
+    print("All you can do is defend with your shield, which gives the princess enough time to defend, but leaves you with life-threatening injuries, and you fall unconcious from a vicious blow to your head. (Ending 11/12)")
+  if has_sword:
+    print("You're able to successfully fend off the monster, but you are seriously injured, but still able to make it out of the dungeon. (Ending 12/12)")
+  if has_sword_and_shield:
+    print("You defend and defeat the monster with ease, leaving the dungeon with the princess with minimal injuries as you take her back to the castle and are rewarded. (Ending 13/12; Secret Ending)")
